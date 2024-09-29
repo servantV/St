@@ -1193,7 +1193,6 @@ xinit(int cols, int rows)
 	if (!(opt_embed && (parent = strtol(opt_embed, NULL, 0))))
 		parent = root;
 	xw.win = XCreateWindow(xw.dpy, root, xw.l, xw.t,
-			win.w, win.h, 0, XDefaultDepth(xw.dpy, xw.scr), InputOutput,
 			win.w, win.h, 0, xw.depth, InputOutput,
 			xw.vis, CWBackPixel | CWBorderPixel | CWBitGravity
 			| CWEventMask | CWColormap, &xw.attrs);
